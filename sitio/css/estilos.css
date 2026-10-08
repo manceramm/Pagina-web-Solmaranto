@@ -291,7 +291,8 @@ p { margin: 0 0 1em; }
   border-radius: var(--radio); padding: 20px 22px; border: 1px solid rgba(172, 136, 93, .35);
 }
 @media (min-width: 640px) { .fecha { grid-template-columns: 1fr auto; } }
-.fecha__dia { display: block; font-size: 1.1rem; text-transform: capitalize; }
+.fecha__dia { display: block; font-size: 1.1rem; }
+.fecha__dia::first-letter { text-transform: uppercase; }
 .fecha__detalle { display: block; font-size: .92rem; }
 .fecha--agotada { opacity: .8; }
 .fecha--agotada .fecha__dia { text-decoration: line-through; text-decoration-thickness: 1px; }
